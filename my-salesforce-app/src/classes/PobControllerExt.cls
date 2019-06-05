@@ -174,8 +174,7 @@ public with sharing class PobControllerExt {
 	public PageReference save() {
 		Savepoint sp = Database.setSavepoint();
 		try {
-			// create or update purchase order
-			upsert po;
+
 			
 			// which line items to be deleted or upserted?
 			List<Line_Item__c> toBeDeleted = new List<Line_Item__c>();
