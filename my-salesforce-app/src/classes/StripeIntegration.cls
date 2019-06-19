@@ -5,7 +5,6 @@ public without sharing class StripeIntegration {
         req.setMethod('GET');
         Http http = new Http();
         HTTPResponse res = http.send(req);
-        
         System.debug(res.getBody());
     }
 }
