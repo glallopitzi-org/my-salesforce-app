@@ -157,12 +157,13 @@ public class TestDataFactory {
 	
 	public static User createUser(String profile, String myAlias) {
 		Profile p = [SELECT Id FROM Profile WHERE Name=:profile LIMIT 1][0];
-		String mail = myAlias + TEST_USER_EMAIL_POSTFIX; 
+		String mail = 'john@saasfocus.com'; 
 		User myUser = new User(alias = myAlias, Email=mail, 
 			FirstName = TEST_USER_FIRSTNAME, LastName=TEST_USER_LASTNAME,
       		EmailEncodingKey=TEST_USER_ENCODING, LanguageLocaleKey=TEST_USER_LOCALE, 
       		LocaleSidKey=TEST_USER_LOCALE, ProfileId = p.Id, 
       		TimeZoneSidKey=TEST_USER_TIMEZONE, UserName=mail);
+		
       	insert myUser;
       	return myUser;
 	}
