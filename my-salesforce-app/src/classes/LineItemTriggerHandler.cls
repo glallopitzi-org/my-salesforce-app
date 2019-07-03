@@ -1,4 +1,4 @@
-public with sharing class LineItemTriggerHandler {
+public class LineItemTriggerHandler {
 		
 	/* Public methods
 	========================== */
@@ -41,6 +41,7 @@ public with sharing class LineItemTriggerHandler {
 		for (Order__c o : orders) {
 			Decimal orderAmount = orderToAmountMap.get(o.Id); 
 			o.Purchased__c = (orderAmount!=null) ? orderAmount : 0;
+			update o;
 		}
 	}
 	
