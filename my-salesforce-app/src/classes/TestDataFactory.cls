@@ -11,7 +11,7 @@ public class TestDataFactory {
 	public static final String TEST_USER_LOCALE = 'en_US';
 	public static final String TEST_USER_TIMEZONE = 'Europe/London';
 	public static final String TEST_USER_FIRSTNAME = 'John';
-	public static final String TEST_USER_LASTNAME = 'Doe';
+	public static final String TEST_USER_LASTNAME = 'Smith';
 	
 	public static Account createAccount() {
 		return createAccounts(1).get(0);
