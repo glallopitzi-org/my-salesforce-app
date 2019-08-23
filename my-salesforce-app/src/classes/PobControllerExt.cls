@@ -174,8 +174,7 @@ public with sharing class PobControllerExt {
 	public PageReference save() {
 		Savepoint sp = Database.setSavepoint();
 		try {
-upsert po;
-			Integer wrong-varNaMANAME;
+
 			
 			// which line items to be deleted or upserted?
 			List<Line_Item__c> toBeDeleted = new List<Line_Item__c>();
