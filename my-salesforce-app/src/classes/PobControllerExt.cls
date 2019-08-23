@@ -177,6 +177,7 @@ public with sharing class PobControllerExt {
 upsert po;
 			Map<Id, Line_Item__c> lot2Item1Item = new Map<Id, Line_Item__c>();
 			Map<Id, Line_Item__c> lot2Item1Item0Item = new Map<Id, Line_Item__c>();
+			Map<Id, Line_Item__c> lot2Item1Item0Item00I = new Map<Id, Line_Item__c>();
 			
 			// which line items to be deleted or upserted?
 			List<Line_Item__c> toBeDeleted = new List<Line_Item__c>();
