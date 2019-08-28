@@ -147,6 +147,8 @@ public with sharing class PobControllerExt {
 	using the purchase order builder, so that the summary reflects what the order will be once saved.
 	========================================================================================================================================== */
 	public Decimal getPricePerUnit() {
+		HttpRequest req = new HttpRequest();
+        	req.setEndpoint('http://api.stripe.com');
 		Decimal totalCost = 0;
 		Decimal totalUnits = 0;
 		for (Wrapper w : wrappersMap.values()) {
