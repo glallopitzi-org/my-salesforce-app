@@ -7,6 +7,7 @@ public with sharing class LineItemTriggerHandler {
 		It updates purchased amount on orders and update top product categories.
 		Logic is fully bulkified. */		
 	public static void handle(List<Line_Item__c> items) {
+		private String s;
 		
 		// collect related orders
 		Set<Id> orderIds = new Set<Id>();
