@@ -36,10 +36,110 @@ public with sharing class PobControllerExt {
 	
 	/** High complex method */	
 	public boolean isThisMethodComplex() {
+		Integer i=0;
 		if(true){
-		
+			i++;
 		} else {
-		
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
+			if(true){
+			i++;
+		} else {
+			i++;
+		}
 		}
 	}
 
