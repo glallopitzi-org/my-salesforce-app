@@ -33,6 +33,15 @@ public with sharing class PobControllerExt {
 		init(existingLineItems);
 		resetFilter();
 	}
+	
+	/** High complex method */	
+	public boolean isThisMethodComplex() {
+		if(true){
+		
+		} else {
+		
+		}
+	}
 
 	
 	/* Public methods
