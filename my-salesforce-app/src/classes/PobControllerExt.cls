@@ -36,111 +36,21 @@ public with sharing class PobControllerExt {
 	
 	/** High complex method */	
 	public boolean isThisMethodComplex() {
-		Integer i=0;
-		if(true){
-			i++;
-		} else {
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-			if(true){
-			i++;
-		} else {
-			i++;
-		}
-		}
+		Integer i =99;
+		Integer j =1;
+		
+		if(i % 2 == 0) {
+			result = i + j;
+		    }
+		    else {
+			if(j % 2 == 0) {
+			    result = i * j;
+			}
+			else {
+			    result = i - j;
+			}
+		    }
+		return true;
 	}
 
 	
