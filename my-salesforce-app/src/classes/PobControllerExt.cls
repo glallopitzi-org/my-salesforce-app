@@ -38,6 +38,7 @@ public with sharing class PobControllerExt {
 	public boolean isThisMethodComplex() {
 		Integer i =99;
 		Integer j =1;
+		Integer result = 0;
 		
 		if(i % 2 == 0) {
 			result = i + j;
