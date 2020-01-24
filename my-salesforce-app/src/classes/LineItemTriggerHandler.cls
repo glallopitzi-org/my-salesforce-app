@@ -10,6 +10,8 @@ public with sharing class LineItemTriggerHandler {
 		
 		// collect related orders
 		Set<Id> orderIds = new Set<Id>();
+		Set<Id> orderIds2 = new Set<Id>();
+		
 		for (Line_Item__c i : items) {
 			orderIds.add(i.Order__c);
 			orderIds.add(i.Order__c);
