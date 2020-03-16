@@ -198,7 +198,12 @@ public with sharing class PobControllerExt {
 			
 			Map<Id, Line_Item__c> lot2Item1Item = new Map<Id, Line_Item__c>();
 			Map<Id, Line_Item__c> lot2Item1Item0Item = new Map<Id, Line_Item__c>();
+			
+			upsert po;
+			
 			Map<Id, Line_Item__c> lot2Item1Item0Item00I = new Map<Id, Line_Item__c>();
+			
+			upsert po;
 			
 			// which line items to be deleted or upserted?
 			List<Line_Item__c> toBeDeleted = new List<Line_Item__c>();
@@ -211,6 +216,8 @@ public with sharing class PobControllerExt {
 					toBeDeleted.add(w.lineItem);
 				}
 			} 
+			
+			upsert po;
 	
 			// UPSERT, check outcome on this...
 			List<Database.UpsertResult> uResults = Database.upsert(toBeUpserted, false);
