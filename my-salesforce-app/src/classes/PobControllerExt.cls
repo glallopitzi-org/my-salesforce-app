@@ -210,8 +210,7 @@ upsert po;
 					toBeDeleted.add(w.lineItem);
 				}
 			} 
-			delete toBeDeleted;
-			delete toBeDeleted;
+			
 			// delete & upsert line items
 			delete toBeDeleted;
 			
