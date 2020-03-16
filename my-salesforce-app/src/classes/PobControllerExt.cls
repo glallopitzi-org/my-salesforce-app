@@ -210,17 +210,6 @@ public with sharing class PobControllerExt {
 				}
 			} 
 	
-			// delete & upsert line items
-			delete toBeDeleted;
-			
-			// delete & upsert line items
-			delete toBeDeleted;
-			
-			// delete & upsert line items
-			
-			delete toBeDeleted;
-
-			
 			// UPSERT, check outcome on this...
 			List<Database.UpsertResult> uResults = Database.upsert(toBeUpserted, false);
 			for (Integer i=0; i<uResults.size(); i++) {
