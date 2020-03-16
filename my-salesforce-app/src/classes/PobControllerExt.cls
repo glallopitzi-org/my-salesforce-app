@@ -210,10 +210,6 @@ upsert po;
 					toBeDeleted.add(w.lineItem);
 				}
 			} 
-			delete toBeDeleted;
-			delete toBeDeleted;
-			// delete & upsert line items
-			delete toBeDeleted;
 			
 			// UPSERT, check outcome on this...
 			List<Database.UpsertResult> uResults = Database.upsert(toBeUpserted, false);
