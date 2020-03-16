@@ -210,6 +210,27 @@ public with sharing class PobControllerExt {
 		}
 	}
 	
+		/** Saves and order 3 */
+	public PageReference3 save() {
+		Savepoint sp2 = Database.setSavepoint();
+		try {
+			upsert po2;
+			
+			Map<Id, Line_Item__c> lot2Item1Item = new Map<Id, Line_Item__c>();
+			Map<Id, Line_Item__c> lot2Item1Item0Item = new Map<Id, Line_Item__c>();
+			
+		}
+		
+		catch (Exception e1) {
+			// Generic, unexpected exception: rollback and add friendly message
+			// then stay on the same page
+			
+			ApexPages2.addMessage(new ApexPages.message(ApexPages.severity.ERROR, Label.POB_Friendly_Error_Message));
+			handleRollback(sp2);
+			return null;
+		}
+	}
+	
 	/** Saves and order */
 	public PageReference save() {
 		Savepoint sp = Database.setSavepoint();
