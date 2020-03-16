@@ -194,7 +194,9 @@ public with sharing class PobControllerExt {
 	public PageReference save() {
 		Savepoint sp = Database.setSavepoint();
 		try {
-upsert po;
+			
+			upsert po;
+			
 			Map<Id, Line_Item__c> lot2Item1Item = new Map<Id, Line_Item__c>();
 			Map<Id, Line_Item__c> lot2Item1Item0Item = new Map<Id, Line_Item__c>();
 			Map<Id, Line_Item__c> lot2Item1Item0Item00I = new Map<Id, Line_Item__c>();
