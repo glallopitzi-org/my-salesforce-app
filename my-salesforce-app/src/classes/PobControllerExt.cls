@@ -397,6 +397,20 @@ public with sharing class PobControllerExt {
 		}
 	}
 	
+	public class Wrapper2 {
+		public Decimal units {
+			get{ return lineItem.Units__c; }
+			set{ lineItem.Units__c = value; }
+		}
+		public Lot__c product {set;get;}
+		public Line_Item__c lineItem {set;get;}
+		
+		public Wrapper(Lot__c lot, Line_Item__c lineItem) {
+			this.lineItem = (lineItem!=null) ? lineItem : new Line_Item__c(Lot__c = lot.Id, Units__c = 0);
+			this.product = lot;
+		}
+	}
+	
 	// Just a custom exception
 	private class SaveException extends Exception {}
 	
