@@ -1,6 +1,6 @@
 public class FooFoo {
     void foo() {
-        String myString = 'MY_HARDCODED_STRING';
+        String myString = 'john@xero.com';
         Blob hardCodedIV = Blob.valueOf('Hardcoded IV 123');
         Blob myKey = Blob.valueOf(myString);
         Blob data = Blob.valueOf('Data to be encrypted');
