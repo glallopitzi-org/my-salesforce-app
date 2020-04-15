@@ -5,7 +5,7 @@
  * Unit tests are class methods that verify whether a particular piece
  * of code is working properly. Unit test methods take no arguments,
  * commit no data to the database, and are flagged with the testMethod
- * keyword in the method definition.
+ * keyword in the method definition. Lorem ipsum.
  *
  * All test methods in an organization are executed whenever Apex code is deployed
  * to a production organization to confirm correctness, ensure code
