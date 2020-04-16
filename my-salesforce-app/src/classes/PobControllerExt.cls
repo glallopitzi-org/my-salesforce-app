@@ -7,7 +7,7 @@ public with sharing class PobControllerExt {
 	private static final String SOQL_WITH_FILTER = 'SELECT Id, Name, Product__c, Product_Category__c, Unit_Price__c, Remaining__c FROM Lot__c WHERE (Remaining__c>0 OR Id in :existingLotsInThisOrder) AND Product_Category__c = :categoryFilter ORDER BY Product__c ASC';
 	private static final Integer PAGE_SIZE = 5;
 	
-	// Records
+	
 	public Order__c po {get;set;}
 	public List<Wrapper> wrappers {get;set;}
 
