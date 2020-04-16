@@ -1,10 +1,8 @@
 public class Foo2 {
     void foo() {
         
-        
-        
         String myString = 'MY_HARDCODED_STRING';
-        Blob hardCodedIV = Blob.valueOf('Hardcoded IV 123');
+        Blob hardCodedIV = Blob.valueOf('Hardcoded IV 456');
         Blob myKey = Blob.valueOf(myString);
         Blob data = Blob.valueOf('Data to be encrypted');
         Blob encrypted = Crypto.encrypt('AES128', myKey, hardCodedIV, data);
