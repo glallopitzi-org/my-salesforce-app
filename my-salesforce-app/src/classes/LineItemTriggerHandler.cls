@@ -1,6 +1,6 @@
 public with sharing class LineItemTriggerHandler {
 		
-	/* Public methods
+	/* Public method
 	========================== */
 	
 	/** This (!) handler methods is to be used on all relevant triggers events.
@@ -78,7 +78,7 @@ public with sharing class LineItemTriggerHandler {
 			this.units += units;
 		}
 		
-		// override compareTo methods to leverage sortable collections
+		// override compao methods to leverage sortable collections
 		public Integer compareTo(Object compareTo) {
 			CategoryWrapper wrapped = (CategoryWrapper) compareTo;
 			if (units>wrapped.units) return -1;
