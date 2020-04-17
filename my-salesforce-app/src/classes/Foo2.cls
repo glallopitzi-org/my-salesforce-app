@@ -10,6 +10,6 @@ public class Foo2 {
         Blob encrypted = Crypto.encrypt('AES128', myKey, hardCodedIV, data);
         
         
-        List<Order__c> orders3 = [SELECT Purchased__c,Product_Category_3__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
+        List<Order__c> orders4 = [SELECT Purchased__c,Product_Category_4__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
     }
 }
