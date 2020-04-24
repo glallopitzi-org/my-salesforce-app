@@ -2,12 +2,12 @@ public class Foo {
     void foo() {
         
         String myString = 'MY_HARDCODED_STRING';
-        Blob hardCodedIV = Blob.valueOf('Hardcoded IV 333');
+        Blob hardCodedIV = Blob.valueOf('Hardcoded IV 222');
         Blob myKey = Blob.valueOf(myString);
         Blob data = Blob.valueOf('Data to be encrypted');
         Blob encrypted = Crypto.encrypt('AES128', myKey, hardCodedIV, data);
         
         
-        List<Order__c> orders = [SELECT Purchased__c,Product_Category,Product_Category_Uni__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
+        List<Order__c> orders = [SELECT Purchased__c,Product_Category,Product_Categni__c,Product_Category_2__c,Product_Category_Units_2__c FROM Order__c];
     }
 }
