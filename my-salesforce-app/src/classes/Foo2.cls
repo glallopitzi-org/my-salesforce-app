@@ -1,7 +1,10 @@
 public class Foo2 {
-    void foo() {
-        
-        
+    
+    global static void handle1(List<Line_Item__c> items) {
+		return null;
+	}
+    
+    void foo() {   
         
         String myString = 'MY_HARDCODED_STRING';
         Blob hardCodedIV = Blob.valueOf('Hardcoded IV 123');
