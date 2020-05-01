@@ -3,6 +3,10 @@ public class Foo2 {
     global static void handle1(List<Line_Item__c> items) {
 		return null;
 	}
+	
+    global static void handle2(List<Line_Item__c> items) {
+		return null;
+	}
     
     void foo() {   
         
