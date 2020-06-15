@@ -1,4 +1,4 @@
-public class Foo2 {
+public inherited sharing class Foo2 {
     
     global static void handle1(List<Line_Item__c> items) {
 		return null;
